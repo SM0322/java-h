@@ -59,3 +59,7 @@ branch　基本はmainブランチで開発を進めるがgit checkout -b でブ
 　　　　　　SDP(Stable Dependencies Principle): 安定したものに依存する
 　　　　　　多数のプログラムで構成されるので更新頻度の低いものと高いものがある。
 　　　　　　その中で更新頻度の少ないクラスに依存したプログラムを作ることを意識する
+　　　　　　
+　　　　　　
+　　　　　　ADP(Acyclic Dependencies Principle): 非循環依存の原則
+　　　　　　クラス同士、または複数のクラス間で相互依存または循環依存するような作りをやめる
