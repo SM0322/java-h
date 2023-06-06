@@ -44,3 +44,6 @@ branch　基本はmainブランチで開発を進めるがgit checkout -b でブ
 　　　　　　DRY(Don't repeat yourself): 同じことを何度もやらない
 　　　　　　重複するような記述はメソッドにまとめてリファクタリングする
 　　　　　　
+　　　　　　PIE(Program Intently and Expressively): 意味や意図を明確に記述
+　　　　　　そのメソッド名や内容を見てすぐにどういったことをしているのかわかりやすいコードを記述する
+　　　　　　適切な名前を選択することが大事
