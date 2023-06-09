@@ -93,3 +93,5 @@ branch　基本はmainブランチで開発を進めるがgit checkout -b でブ
 　　　　　
 　　　　　TempleteMethodパターン: 処理の大まかな流れを決めるfinalメソッドと処理の詳細を記述したprotected abstractメソッドを用意し、
 　　　　　大まかな動きはコチラで設定し、詳細部分はサブクラスを開発する人にゆだねる形の構造
+　　　　　
+　　　　　JARマニフェスト: META-INFO/MANIFIEST.MFを用意し、各情報の宣言を行う
