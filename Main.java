@@ -63,3 +63,5 @@ branch　基本はmainブランチで開発を進めるがgit checkout -b でブ
 　　　　　　
 　　　　　　ADP(Acyclic Dependencies Principle): 非循環依存の原則
 　　　　　　クラス同士、または複数のクラス間で相互依存または循環依存するような作りをやめる
+　　　　　　
+　　　　　　デザインパターン: プログラムに利用する設計の城跡やお手本のことを言う
