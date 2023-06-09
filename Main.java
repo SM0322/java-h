@@ -70,4 +70,21 @@ branch　基本はmainブランチで開発を進めるがgit checkout -b でブ
 　　　　　　設計についてお議論をしやすくなる、意思疎通が図りやすくなる
 　　　　　　
 　　　　　　Facade: 窓口という意味でプログラムを作る際の最初の窓口を作るやり方をFacadeパターンという
+　　　　　　最初の呼び出しさえすれば後はプログラムがやってくれるのでユーザーにやさしい
 　　　　　　
+　　　　　　今までの知識だとjavaではnewするだけでインスタンスが作れてしまうので唯一性というものがないと言える。
+　　　　　　
+　　　　　public final class SingleLetonFlower{
+　　　　　    private static SingleletonFlower theInstance;
+　　　　　   // 唯一のインスタンス保存用
+　　　　　   private SingleletonFlower() {}
+　　　　　   public static SingletonFlower getInstance {
+　　　　　       if (theInstance == null) {
+　　　　　           theInstance = new SingleletonFlower();
+　　　　　       }
+　　　　　       return theInstance;
+　　　　　   }
+　　　　　}
+　　　　　
+　　　　　privateコンストラクタ: privateにすることでコンストラクタは他から呼び出されることはない
+　　　　　そしてgetメソッドの１回目のみでインスタンスは生成されるので唯一のインスタンスとなる
